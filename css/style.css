@@ -1,0 +1,31 @@
+
+#mainContainer {
+    position: relative;
+}
+
+#topStocks {
+    position: absolute;
+    width: 283px;
+    height: 450px;
+    left: 55%;
+    top: 100px;
+    background-color:gray;
+}
+
+
+#newsContainer {
+    position: absolute;
+    width: 283px;
+    height: 226px;
+    left: 15%;
+    top: 100px;
+    background-color:turquoise;
+}
+
+.footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
