@@ -1,0 +1,16 @@
+
+#mainContainer {
+    position: relative;
+}
+
+
+
+
+#newsContainer, #topStocks {
+position: absolute;
+width: 283px;
+height: 226px;
+left: 38px;
+top: 98px;
+background-color:turquoise;
+}
