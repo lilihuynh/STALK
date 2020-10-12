@@ -29,3 +29,15 @@
     width: 100%;
     text-align: center;
 }
+
+
+/* login page */
+#loginContainer {
+    position: relative;
+}
+#loginInputs {
+    position: absolute;
+    left:37%;
+    width: 300px;
+    margin-top: 10%;
+}
