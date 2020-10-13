@@ -1,4 +1,8 @@
-
+.navBottomBorder {
+    height: 5px;
+    width: 100%;
+    background-color: turquoise;
+}
 #mainContainer {
     position: relative;
 }
@@ -24,6 +28,7 @@
 
 .footer {
     position:fixed;
+    padding: 0px;
     left: 0;
     bottom: 0;
     width: 100%;
