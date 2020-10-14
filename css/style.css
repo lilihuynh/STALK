@@ -46,3 +46,50 @@
     width: 300px;
     margin-top: 10%;
 }
+
+
+
+/* About page */
+#parentContainer{
+    position: relative;
+}
+.aboutUs {
+    text-align: center;
+    color:black;
+     font-size: xx-large;
+     font-weight: bold;
+}
+ #topLeftContainer {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 10%;
+    top: 100px;
+    background-color: turquoise;
+ }
+ .leftContainerChild {
+     text-align: center;
+     line-height: 400px;
+     color:white;
+     font-size: xx-large;
+     font-weight: bold;
+     font-family:Haettenschweiler;
+
+
+ }
+ #topRightContainer {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 55%;
+    top: 270px;
+    background-color: gray;
+ }
+ .rightContainerChild{
+    text-align: center;
+    line-height: 400px;
+    color:white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family:Haettenschweiler;
+ }
