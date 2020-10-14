@@ -10,11 +10,12 @@
 </head>
 
 <body>
+   
   <!-- navbar -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" style="background-color: cadetblue;">
-        <P style="background-color: aquamarine;"> <strong>ST<span style="color:gray;">A</span>LK</strong></P>
+      <a class="navbar-item" style="background-color: cadetblue; border-radius: 15%;">
+        <P> <strong>ST<span style="color:gray;">&Delta;</span>LK</strong></P>
       </a>
 
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -27,13 +28,13 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
+        <a class="navbar-item" href="/index.html">
           Home
         </a>
 
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More
+          <a class="navbar-link" href="/Login.html">
+            Sign Up
           </a>
 
           <div class="navbar-dropdown">
@@ -57,7 +58,7 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-light">
+            <a class="button is-light" href="/Login.html">
               Log in
             </a>
           </div>
@@ -65,6 +66,9 @@
       </div>
     </div>
   </nav>
+  <!-- color for looks -->
+  <div class="navBottomBorder"></div>
+ 
   <!-- main content container -->
   <div id="mainContainer">
     <div id="newsContainer">
@@ -74,7 +78,7 @@
     </div>
   </div>
   <!-- footer -->
-  <footer class="container is-fullhd footer" style="padding:0;">
+  <footer class="container is-fullhd footer">
     <div class="notification is-primary">
       <p> &hearts; Contact &hearts; </p>
     </div>
