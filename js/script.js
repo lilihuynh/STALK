@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 var symbols =[];
-$("#search-button").on("click", function (event) {
+$(".search-button").on("click", function (event) {
     event.preventDefault();
     
     //grab text from input box
@@ -49,7 +49,7 @@ $("#search-button").on("click", function (event) {
     }).then(function (response) {
         console.log(response);
 
-       
+       //stock info
         $("#name").text(response.quote.symbol);
         $("#symbol").text(response.quote.companyName);
         $("#quote").text(response.quote.latestPrice);
@@ -64,6 +64,12 @@ $("#search-button").on("click", function (event) {
         $("#previousClose").text(response.quote.previousClose);
         $("#high").text(response.quote.high);
         $("#low").text(response.quote.low);
+
+        //news
+        $("#headline").text(response.news[i].headline);
+        $("summary").response.news[i].summary
+        response.news[i].source
+        response.news[i].url
 
 
         
@@ -94,3 +100,29 @@ $.ajax(settings).done(function (response) {
 
 
 });
+
+function renderButtons() {
+  // Deleting the city buttons prior to adding new movie buttons
+  // if not, we will have repeat buttons)
+  $("#city-button").empty();
+  for (var i = 0; i < symbols.length; i++) {
+      //create button element for retrievedCities
+      var symbolButton = $("<button>");
+      //add class city (script for later click event) to each button
+      symbolButton.addClass("symbolClick");
+      //add class button (css) to each button
+      symbolButton.addClass("button");
+      //add data-name attribute to each city button
+      symbolButton.attr("data-name", symbols[i]);
+      //add text which is the city name from cities array to each city button
+      symbolButton.text(symbols[i]);
+      //append button to HTML
+      $("#city-button").append(cityButton);
+  };
+
+};
+
+if (retrievedSymbols) {
+  symbols = retrievedSymbols;
+  renderButtons();
+};
