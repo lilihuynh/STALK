@@ -30,7 +30,7 @@ $("#search-button").on("click", function (event) {
     event.preventDefault();
     
     //grab text from input box
-    var symbol = $("#").val().trim();
+    var symbol = $("#symbol").val().trim();
 
     //add new symbol input to symbol array
     symbols.push(symbol);
