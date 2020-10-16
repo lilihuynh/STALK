@@ -48,3 +48,23 @@ $("#search-button").on("click", function (event) {
 
 var retrievedSymbols = JSON.parse(localStorage.getItem("symbols"));
 console.log(retrievedSymbols);
+
+//Ajax call
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://yahoo-finance15.p.rapidapi.com/api/yahoo/ne/news/AAPL",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "yahoo-finance15.p.rapidapi.com",
+		"x-rapidapi-key": "bc9acd37a3msh43f7fda48e7a6e5p1731cfjsn1e81e356eda8"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+
+  $("#newsContainer").text(response.item[0]);
+
+
+});
