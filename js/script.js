@@ -57,7 +57,7 @@ var settings = {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "yahoo-finance15.p.rapidapi.com",
-		"x-rapidapi-key": "e25b21b3eemshcc8a3cc8348f153p149c85jsn637dfe0dc724"
+		"x-rapidapi-key": "bc9acd37a3msh43f7fda48e7a6e5p1731cfjsn1e81e356eda8"
 	}
 }
 
