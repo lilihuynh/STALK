@@ -50,6 +50,7 @@ var retrievedSymbols = JSON.parse(localStorage.getItem("symbols"));
 console.log(retrievedSymbols);
 
 //Ajax call
+
 var settings = {
 	"async": true,
 	"crossDomain": true,
