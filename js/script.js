@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
 var symbols = [];
 $("#search-button").on("click", function (event) {
   event.preventDefault();
@@ -69,9 +70,6 @@ $("#search-button").on("click", function (event) {
 
   });
 
-
-});
-
 var retrievedSymbols = JSON.parse(localStorage.getItem("symbols"));
 console.log(retrievedSymbols);
 
@@ -94,6 +92,7 @@ $.ajax(settings).done(function (response) {
 
 
 });
+
 
 // line chart
 function makeTheChart(response) {
@@ -148,3 +147,30 @@ function makeTheChart(response) {
     }
   });
 }
+
+function renderButtons() {
+  // Deleting the city buttons prior to adding new movie buttons
+  // if not, we will have repeat buttons)
+  $("#city-button").empty();
+  for (var i = 0; i < symbols.length; i++) {
+      //create button element for retrievedCities
+      var symbolButton = $("<button>");
+      //add class city (script for later click event) to each button
+      symbolButton.addClass("symbolClick");
+      //add class button (css) to each button
+      symbolButton.addClass("button");
+      //add data-name attribute to each city button
+      symbolButton.attr("data-name", symbols[i]);
+      //add text which is the city name from cities array to each city button
+      symbolButton.text(symbols[i]);
+      //append button to HTML
+      $("#city-button").append(cityButton);
+  };
+
+};
+
+if (retrievedSymbols) {
+  symbols = retrievedSymbols;
+  renderButtons();
+};
+
