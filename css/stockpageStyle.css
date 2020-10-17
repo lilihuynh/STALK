@@ -17,7 +17,7 @@
 }
 
 
-#newsContainer, #fiveNews {
+#newsContainer {
     position: absolute;
     width: 60%;
     height: auto;
@@ -111,4 +111,21 @@ font-weight: bold;
 
  .news{
 padding: 3px;
+ }
+
+ .myChart{
+     width: 400px;
+     height: 400px;
+ }
+ #fiveNews{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 15%;
+    top: 100px;
+    background-color:turquoise;
+ }
+
+ #generalStock{
+     width: 30%;
  }
