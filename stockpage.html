@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="./css/stockpageStyle.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    
 
 </head>
 
@@ -69,20 +71,21 @@
                         <i class="fas fa-search" aria-hidden="true"></i>
                     </span>
                 </p>
-                <button class="search-button" id=>Button</button>
+                <button class="search-button">Button</button>
             </div>
         </nav>
     </header>
 
     <main id="navBottomBorder">
+      
         <div class="container" id="fiveNews">
-            
+          <canvas id="myChart" width="400" height="400"></canvas> 
             <div id="symbolNews"></div>
         </div>
 
-        <div class="uk-card uk-card-body">
+        <div  class="uk-card uk-card-body">
 
-            <div class="uk-card-body">
+            <div id="generalStock" class="uk-card-body">
                 <div id="stockInfo"> </div>
             </div>
         </div>
