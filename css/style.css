@@ -1,30 +1,58 @@
-.navBottomBorder {
-    height: 5px;
-    width: 100%;
-    background-color: turquoise;
+  
+* {
+    box-sizing: border-box;
+  }
+  /* Full height */
+  body, html {
+    height: 100%;
+  }
+body{
+    /* The image used */
+  background-image: url("../Assets/backgroundmain.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-#mainContainer {
-    position: relative;
+p{
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#topStocks {
-    position: absolute;
-    width: 283px;
-    height: 450px;
-    left: 55%;
-    top: 100px;
-    background-color:gray;
+
+#navbar-style{
+    background-color: rgb(73, 80, 88);
 }
 
-
-#newsContainer {
-    position: absolute;
-    width: 283px;
-    height: 226px;
-    left: 15%;
-    top: 100px;
-    background-color:turquoise;
+#logoborder{
+    background-color: rgb(43, 46, 48);
 }
+.navbar-item,
+.navbar-link{
+    color: lightgray;
+    
+}
+
+.navbar-dropdown,
+.notification,
+.navbar-item{
+    background-color: rgb(73, 80, 88);
+}
+.button,
+.fas{
+    color: rgb(73, 80, 88);
+}
+
 
 .footer {
     position:fixed;
@@ -33,63 +61,41 @@
     bottom: 0;
     width: 100%;
     text-align: center;
+   color: white;
 }
 
+/*Search button style*/
 
-/* login page */
-#loginContainer {
-    position: relative;
-}
-#loginInputs {
-    position: absolute;
-    left:37%;
-    width: 300px;
-    margin-top: 10%;
-}
-
-
-
-/* About page */
-#parentContainer{
-    position: relative;
-}
-.aboutUs {
+#searchbar{
     text-align: center;
-    color:black;
-     font-size: xx-large;
-     font-weight: bold;
+    
+    border-style: solid;
+    margin-top: 3%;
+    margin-bottom: 1%;
 }
- #topLeftContainer {
-    position: absolute;
-    width: 500px;
-    height: 400px;
-    left: 10%;
-    top: 100px;
-    background-color: turquoise;
- }
- .leftContainerChild {
-     text-align: center;
-     line-height: 400px;
-     color:white;
-     font-size: xx-large;
-     font-weight: bold;
-     font-family:Haettenschweiler;
 
-
- }
- #topRightContainer {
-    position: absolute;
-    width: 500px;
-    height: 400px;
-    left: 55%;
-    top: 270px;
-    background-color: gray;
- }
- .rightContainerChild{
-    text-align: center;
-    line-height: 400px;
-    color:white;
-    font-size: xx-large;
-    font-weight: bold;
-    font-family:Haettenschweiler;
- }
+/*body container*/
+.container{
+    margin:  auto;
+}
+.row{
+    padding: 1%;
+}
+#myChart{
+    background-color: yellow;
+}
+#newsInfo,
+#topStocks{
+    background-color: rgb(122, 123, 124);
+    border-style: solid;
+}
+.column{
+    background-color: rgb(122, 123, 124);
+    border-style: solid;
+    
+}
+#mainInfo{
+    padding: 2%;
+    border-style: solid;
+}
+/*Stock page style
