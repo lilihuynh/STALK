@@ -8,26 +8,28 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/stockpageStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
 </head>
 
-<body >
-   <header>
-  <!-- navbar -->
-  <nav class="navbar" role="navigation" aria-label="main navigation" id="navbar-style">
-    <div class="navbar-brand">
-      <a class="navbar-item" id="logoborder">
-        <P id="logotext"> <strong>ST<span >&Delta;</span>LK</strong></P>
-      </a>
-      
-      <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="false"data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    
-    
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" style="background-color: cadetblue; border-radius: 15%;">
+                    <P> <strong>ST<span style="color:gray;">&Delta;</span>LK</strong></P>
+                </a>
 
+                <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item" href="./index.html">
@@ -88,8 +90,12 @@
           <canvas id="myChart" width="300px" height="300px"></canvas>
           </div>
             <div class="column is-5" id="topStocks">
-              <h2>News</h2>
-              <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusamus tenetur minus ex, modi quasi corrupti ut perferendis dignissimos libero perspiciatis totam dolor molestiae animi delectus nihil voluptates! Fugiat, dicta?</p>
+               <div  class="uk-card uk-card-body">
+            <div id="generalStock" class="uk-card-body">
+                <div id="stockInfo"> </div>
+            </div>
+        </div>
+
             </div>
         </div>
       </div>
