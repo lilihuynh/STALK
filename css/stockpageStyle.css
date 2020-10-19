@@ -1,0 +1,131 @@
+.navBottomBorder {
+    height: 5px;
+    width: 100%;
+    background-color: turquoise;
+}
+#mainContainer {
+    position: relative;
+}
+
+#topStocks {
+    position: absolute;
+    width: 200px;
+    height: 450px;
+    right: 5%;
+    top: 100px;
+    background-color:gray;
+}
+
+
+#newsContainer {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 15%;
+    top: 100px;
+    background-color:turquoise;
+}
+
+.footer {
+    position:fixed;
+    padding: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* login page */
+#loginContainer {
+    position: relative;
+}
+#loginInputs {
+    position: absolute;
+    left:37%;
+    width: 300px;
+    margin-top: 10%;
+}
+
+
+
+/* About page */
+#parentContainer{
+    position: relative;
+}
+.aboutUs {
+    text-align: center;
+    color:black;
+     font-size: xx-large;
+     font-weight: bold;
+}
+ #topLeftContainer {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 10%;
+    top: 100px;
+    background-color: turquoise;
+ }
+ .leftContainerChild {
+     text-align: center;
+     line-height: 400px;
+     color:white;
+     font-size: xx-large;
+     font-weight: bold;
+     font-family:Haettenschweiler;
+
+
+ }
+ #topRightContainer {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 55%;
+    top: 270px;
+    background-color: gray;
+ }
+ .rightContainerChild{
+    text-align: center;
+    line-height: 400px;
+    color:white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family:Haettenschweiler;
+ }
+
+ 
+ .savedBtn{
+        display: block;
+        background-color: white;
+        color: black;
+        border: 2px solid grey;
+        margin-top: 15px;
+        margin-left: 15px;
+    
+ }
+
+ .headline{
+font-weight: bold;
+ }
+
+ .news{
+padding: 3px;
+ }
+
+ .myChart{
+     width: 400px;
+     height: 400px;
+ }
+ #fiveNews{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 15%;
+    top: 100px;
+    background-color:turquoise;
+ }
+
+ #generalStock{
+     width: 30%;
+ }
