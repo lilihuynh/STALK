@@ -1,102 +1,93 @@
-  
-* {
-    box-sizing: border-box;
+  * {
+      box-sizing: border-box;
   }
+
   /* Full height */
   body, html {
     height: 100%;
   }
-body{
-    /* The image used */
-  background-image: url("../Assets/backgroundmain.jpg");
 
-  /* Center and scale the image nicely */
+  body {
+      /* The image used */
+      background-image: url("../Assets/backgroundmain.jpg");
+      /* Center and scale the image nicely 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
-p{
-    color: whitesmoke;
-    font-weight: bold;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-h2{
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+  background-attachment: fixed;*/
+  }
 
+  p {
+      color: whitesmoke;
+      font-weight: bold;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 
-#navbar-style{
-    background-color: rgb(73, 80, 88);
-}
+  h2 {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 
-#logoborder{
-    background-color: rgb(43, 46, 48);
-}
-.navbar-item,
-.navbar-link{
-    color: lightgray;
-    
-}
+  #navbar-style {
+      background-color: rgb(73, 80, 88);
+  }
 
-.navbar-dropdown,
-.notification,
-.navbar-item{
-    background-color: rgb(73, 80, 88);
-}
-.button,
-.fas{
-    color: rgb(73, 80, 88);
-}
+  #logoborder {
+      background-color: rgb(43, 46, 48);
+  }
 
+  .navbar-item, .navbar-link {
+      color: lightgray;
+  }
 
-.footer {
-    position:fixed;
-    padding: 0px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-   color: white;
-}
+  .navbar-dropdown, .notification, .navbar-item {
+      background-color: rgb(73, 80, 88);
+  }
 
-/*Search button style*/
+  .button, .fas {
+      color: rgb(73, 80, 88);
+  }
 
-#searchbar{
-    text-align: center;
-    
-    border-style: solid;
-    margin-top: 3%;
-    margin-bottom: 1%;
-}
+  /*Search button style*/
 
-/*body container*/
-.container{
-    margin:  auto;
-}
+  #searchbar {
+      text-align: center;
+      border-style: solid;
+      margin-top: 3%;
+      margin-bottom: 1%;
+  }
 
-.row{
-    padding: 1%;
-}
-#myChart{
-    background-color: yellow;
-}
-#newsInfo,
-#topStocks{
-    background-color: rgb(122, 123, 124);
-    border-style: solid;
-}
-.column{
-    background-color: rgb(122, 123, 124);
-    border-style: solid;
-    
-}
-#mainInfo{
-    padding: 2%;
-    border-style: solid;
-}
+  /*body container*/
 
+  .container {
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+
+  .row {
+      padding: 1%;
+  }
+
+  #myChart {
+      background-color: yellow;
+  }
+
+  #newsInfo, #topStocks {
+      background-color: gray;
+      border-style: solid;
+  }
+
+  .column {
+      background-color: rgb(122, 123, 124);
+      border-style: solid;
+  }
+
+  #mainInfo {
+      padding: 2%;
+      border-style: solid;
+      margin-bottom: 0;
+      
+  }
