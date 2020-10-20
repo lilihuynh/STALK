@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "method": "GET",
     "headers": {
       "x-rapidapi-host": "yahoo-finance15.p.rapidapi.com",
-      "x-rapidapi-key": "bc9acd37a3msh43f7fda48e7a6e5p1731cfjsn1e81e356eda8"
+      "x-rapidapi-key": "9140d2d78amsh5d4e59054ecb932p1a991ajsnb5b2a33d25c0"
     }
   }
   $.ajax(settings).done(function (response) {
