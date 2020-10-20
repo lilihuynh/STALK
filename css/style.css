@@ -1,102 +1,107 @@
-  
-* {
-    box-sizing: border-box;
+  * {
+      box-sizing: border-box;
   }
+
   /* Full height */
+
   body, html {
-    height: 100%;
+      height: 100%;
+      background-color: rgb(27, 27, 27);
   }
-body{
-    /* The image used */
-  background-image: url("../Assets/backgroundmain.jpg");
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-p{
-    color: whitesmoke;
-    font-weight: bold;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-h2{
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 
-#navbar-style{
-    background-color: rgb(73, 80, 88);
-}
+  p {
+      color: whitesmoke;
+      font-weight: bold;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 
-#logoborder{
-    background-color: rgb(43, 46, 48);
-}
-.navbar-item,
-.navbar-link{
-    color: lightgray;
-    
-}
+  h2 {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 
-.navbar-dropdown,
-.notification,
-.navbar-item{
-    background-color: rgb(73, 80, 88);
-}
-.button,
-.fas{
-    color: rgb(73, 80, 88);
-}
+  #navbar-style {
+      background-color: rgb(73, 80, 88);
+  }
 
+  #logoborder {
+      background-color: rgb(43, 46, 48);
+  }
 
-.footer {
-    position:fixed;
-    padding: 0px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-   color: white;
-}
+  .navbar-item, .navbar-link {
+      color: lightgray;
+  }
 
-/*Search button style*/
+  .navbar-dropdown, .notification, .navbar-item {
+      background-color: rgb(73, 80, 88);
+  }
 
-#searchbar{
-    text-align: center;
-    
-    border-style: solid;
-    margin-top: 3%;
-    margin-bottom: 1%;
-}
+  .button, .fas {
+      color: rgb(73, 80, 88);
+  }
 
-/*body container*/
-.container{
-    margin:  auto;
-}
+  /*Search button style*/
 
-.row{
-    padding: 1%;
-}
-#myChart{
-    background-color: yellow;
-}
-#newsInfo,
-#topStocks{
-    background-color: rgb(122, 123, 124);
-    border-style: solid;
-}
-.column{
-    background-color: rgb(122, 123, 124);
-    border-style: solid;
-    
-}
-#mainInfo{
-    padding: 2%;
-    border-style: solid;
-}
+  #searchbar {
+      text-align: center;
+      border-style: solid;
+      margin-top: 3%;
+      margin-bottom: 1%;
+  }
 
+  /*body container*/
+
+  .container {
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+
+  .row {
+      padding: 1%;
+  }
+
+   /*#myChart {
+      background-color: yellow;
+  }*/
+
+  .column {
+      /*background-color: rgb(122, 123, 124);*/
+      border-style: solid;
+  }
+
+  #mainInfo {
+      padding: 2%;
+      border-style: solid;
+      margin-bottom: 0;
+  }
+
+  .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 0;
+      color: white;
+      text-align: center;
+      height: 50px;
+
+  }
+
+  .newsDisplay, .savedBtn {
+      display: block;
+      background-color: white;
+      color: black;
+      border: 2px solid rgb(14, 102, 117);
+      margin-top: 15px;
+      border-radius: 4px;
+      color: black;
+      padding:5px;
+  }
+  
+  #page {
+    margin-bottom: 50px;
+}
