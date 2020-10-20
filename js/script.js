@@ -28,7 +28,51 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://yahoo-finance15.p.rapidapi.com/api/yahoo/ne/news/AAPL",
+    "method": "GET",
+    "headers": {
+      "x-rapidapi-host": "yahoo-finance15.p.rapidapi.com",
+      "x-rapidapi-key": "bc9acd37a3msh43f7fda48e7a6e5p1731cfjsn1e81e356eda8"
+    }
+  }
+  $.ajax(settings).done(function (response) {
+    console.log(response);
+    for (var i = 0; i < response.item.length; i++) {
+      var top = $("<div>");
+      top.addClass("newsDisplay");
+      top.attr("id", "Article-" + i); //creat id for each article
+      $("#topStocks").append(top);
+  
+      $("#Article-" + i).append("<h3 class='headline'><b>" + response.item[i].title + "<b></h3>");
+      $("#Article-" + i).append("<h5 class='news'><b>Summary: </b>" + response.item[i].description + "</h5>");
+      $("#Article-" + i).append("<h5 class='news'><b>Source: </b>" + response.item[i].pubDate + "<h5>");
+      $("#Article-" + i).append("<a href=" + response.item[i].link + "><b>Link: </b>" + response.item[i].link + "</a>");
+  
+    }
+  
+  });
+
 });
+
+
+// for (var i = 0; i < response.news.length; i++) {
+//   var symbolNews = $("<div>");
+//   symbolNews.addClass("savedBtn");
+//   symbolNews.attr("id", "symbolArticle-" + i); //creat id for each article
+//   $("#symbolNews").append(symbolNews);
+
+//   //attach article news accordinglly to the created divs with unique id for each div
+//   $("#symbolArticle-" + i).append("<h4 class='headline'>" + response.news[i].headline + "</h4>");
+//   $("#symbolArticle-" + i).append("<h5 class='news'><b>Summary: </b>" + response.news[i].summary + "</h5>");
+//   $("#symbolArticle-" + i).append("<h5 class='news'><b>Source: </b>" + response.news[i].source + "</h5>");
+//   $("#symbolArticle-" + i).append("<a href=" + response.news[i].url + "><b>Link: </b>" + response.news[i].url + "</a>");
+
+// }
+
+
 
 //users search for stock info
 $(".search-button").on("click", function (event) {
@@ -220,6 +264,9 @@ if (retrievedSymbols) {
 //   makeTheChart(response);
 
 // }
+
+
+
 
 
 
