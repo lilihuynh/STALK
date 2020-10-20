@@ -125,7 +125,6 @@ function pastingStock(response) {
   $("#stockInfo").append("<h4>" + response.quote.latestTime + "</h4>");
   $("#stockInfo").append("<h6><b>Price: </b>" + response.quote.latestPrice + "$</h6>");
   $("#stockInfo").append("<h6><b>Change: </b>" + response.quote.change + "$</h6>");
-  $("#stockInfo").append("<h6><b>ercentage change: </b>" + response.quote.changePercent + "</h6>");
   $("#stockInfo").append("<h6><b>Bid: </b>" + response.quote.iexBidPrice + "$</h6>");
   $("#stockInfo").append("<h6><b>Ask: </b>" + response.quote.iexAskPrice + "$</h6>");
   $("#stockInfo").append("<h6><b>Open Price: </b>" + response.quote.open + "$</h6>");
