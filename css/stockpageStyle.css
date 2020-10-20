@@ -1,0 +1,125 @@
+.navBottomBorder {
+    height: 5px;
+    width: 100%;
+    background-color: turquoise;
+}
+
+#mainContainer {
+    position: relative;
+}
+
+#topStocks {
+    height: 1000px;
+    width: 100px;
+   padding: 3px;
+    right: 5%;
+    top: 5%;
+    margin-bottom: 10px;
+    
+}
+
+#newsContainer {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 15%;
+    top: 100px;
+    background-color: turquoise;
+}
+
+
+
+/* login page */
+
+#loginContainer {
+    position: relative;
+}
+
+#loginInputs {
+    position: absolute;
+    left: 37%;
+    width: 300px;
+    margin-top: 10%;
+}
+
+/* About page */
+
+#parentContainer {
+    position: relative;
+}
+
+.aboutUs {
+    text-align: center;
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#topLeftContainer {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 10%;
+    top: 100px;
+    background-color: turquoise;
+}
+
+.leftContainerChild {
+    text-align: center;
+    line-height: 400px;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Haettenschweiler;
+}
+
+#topRightContainer {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    left: 55%;
+    top: 270px;
+    background-color: gray;
+}
+
+.rightContainerChild {
+    text-align: center;
+    line-height: 400px;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Haettenschweiler;
+}
+
+.headline {
+    font-weight: bold;
+}
+
+.news {
+    padding: 3px;
+}
+
+.myChart {
+    width: 500px;
+    height: 300px;
+}
+
+#fiveNews {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 15%;
+    top: 100px;
+    background-color: turquoise;
+}
+
+#generalStock {
+    width: 30%;
+}
+#page {
+    margin-bottom: 50px;
+}
+
+#stockInfo{
+    color: white;
+}
