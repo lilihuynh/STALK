@@ -57,23 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-
-// for (var i = 0; i < response.news.length; i++) {
-//   var symbolNews = $("<div>");
-//   symbolNews.addClass("savedBtn");
-//   symbolNews.attr("id", "symbolArticle-" + i); //creat id for each article
-//   $("#symbolNews").append(symbolNews);
-
-//   //attach article news accordinglly to the created divs with unique id for each div
-//   $("#symbolArticle-" + i).append("<h4 class='headline'>" + response.news[i].headline + "</h4>");
-//   $("#symbolArticle-" + i).append("<h5 class='news'><b>Summary: </b>" + response.news[i].summary + "</h5>");
-//   $("#symbolArticle-" + i).append("<h5 class='news'><b>Source: </b>" + response.news[i].source + "</h5>");
-//   $("#symbolArticle-" + i).append("<a href=" + response.news[i].url + "><b>Link: </b>" + response.news[i].url + "</a>");
-
-// }
-
-
-
 //users search for stock info
 $(".search-button").on("click", function (event) {
   event.preventDefault();
@@ -255,65 +238,5 @@ if (retrievedSymbols) {
   pastingStock(response);
   makeTheChart(response);
 };
-
-
-
-// if (retrievedResponse) {
-//   response = retrievedResponse;
-//   pastingStock(response);
-//   makeTheChart(response);
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Ajax call
-// var settings = {
-//     "async": true,
-//     "crossDomain": true,
-//     "url": "https://yahoo-finance15.p.rapidapi.com/api/yahoo/ne/news/AAPL",
-//     "method": "GET",
-//     "headers": {
-//         "x-rapidapi-host": "yahoo-finance15.p.rapidapi.com",
-//         "x-rapidapi-key": "bc9acd37a3msh43f7fda48e7a6e5p1731cfjsn1e81e356eda8"
-//     }
-// }
-
-// $.ajax(settings).done(function (response) {
-//     console.log(response);
-
-//     //$("#newsContainer").text(response.item[0]);
-
-
-// });
-
-
 
 
