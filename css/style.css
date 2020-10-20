@@ -105,3 +105,8 @@
   #page {
     margin-bottom: 50px;
 }
+#indexLogo {
+    font-size:50px;
+    font-weight: bold;
+    color: white;
+}
