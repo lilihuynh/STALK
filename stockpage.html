@@ -15,40 +15,52 @@
 </head>
 
 <body>
-
-  <!-- navbar -->
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" style="background-color: cadetblue; border-radius: 15%;">
-        <P> <strong>ST<span style="color:gray;">&Delta;</span>LK</strong></P>
-      </a>
-
-      <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="./index.html">
-          Home
+  <header>
+    <!-- navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="navbar-style">
+      <div class="navbar-brand">
+        <a class="navbar-item" id="logoborder">
+          <P id="logotext"> <strong>ST<span>&Delta;</span>LK</strong></P>
         </a>
-        <!-- <div id="navbarBasicExample" class="navbar-menu"> -->
+
+        <a role="button" class="navbar-burger " aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="./stockpage.html">
-            Stock
+          <a class="navbar-item" href="./index.html">
+            Home
           </a>
-          <hr>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="about.html">
-              About 
+          <div class="navbar-start">
+            <a class="navbar-item" href="./stockpage.html">
+              Stock
             </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Info
+              </a>
+              <hr>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="about.html">
+                  About
+                </a>
+                <a class="navbar-item" href="contact.html">
+                  Contact
+                </a>
+
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
 
   <!--Main news -->
@@ -80,7 +92,7 @@
         </div>
 
         <div class="column is-three-fifths">
-          <canvas id="myChart" width="400" height="400"></canvas>
+          <canvas id="myChart"></canvas>
           <div id="symbolNews"></div>
         </div>
 
@@ -94,22 +106,10 @@
 
   </div>
 
-
-
-  <!-- footer 
-  
-    <footer class="notification footer">
-      <p> &hearts; Contact &hearts; </p>
-    </footer>
-  <footer class="footer">
-    <div class="content has-text-centered">
+  <footer class=" is-fullhd footer">
+    <div class="notification ">
       <p> &hearts; Contact &hearts; </p>
     </div>
-  </footer>-->
-  <footer>
-
-    <p> &hearts; Contact &hearts; </p>
-
   </footer>
 
   <script src=" https://code.jquery.com/jquery-3.5.1.min.js"

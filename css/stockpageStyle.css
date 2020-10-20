@@ -9,12 +9,13 @@
 }
 
 #topStocks {
-    position: absolute;
+    height: 1000px;
     width: 100px;
-    height: auto;
+   padding: 3px;
     right: 5%;
     top: 5%;
-    background-color: gray;
+    margin-bottom: 10px;
+    
 }
 
 #newsContainer {
@@ -26,15 +27,7 @@
     background-color: turquoise;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(73, 80, 88);
-    color: white;
-    text-align: center;
-}
+
 
 /* login page */
 
@@ -98,15 +91,6 @@ footer {
     font-family: Haettenschweiler;
 }
 
-.savedBtn {
-    display: block;
-    background-color: white;
-    color: black;
-    border: 2px solid grey;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
 .headline {
     font-weight: bold;
 }
@@ -116,8 +100,8 @@ footer {
 }
 
 .myChart {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
 }
 
 #fiveNews {
@@ -131,4 +115,11 @@ footer {
 
 #generalStock {
     width: 30%;
+}
+#page {
+    margin-bottom: 50px;
+}
+
+#stockInfo{
+    color: white;
 }
