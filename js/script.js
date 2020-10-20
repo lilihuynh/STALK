@@ -76,7 +76,7 @@ $(".search-button").on("click", function (event) {
     //add new symbol input to symbol array
     symbols.push(symbol);
 
-    // //save symbols array
+    //save symbols array
     localStorage.setItem("symbols", JSON.stringify(symbols));
     renderButtons();
   }
