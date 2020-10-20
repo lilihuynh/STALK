@@ -16,7 +16,12 @@ p {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 h2 {
     color: white;
     font-weight: bold;
@@ -43,7 +48,13 @@ h2 {
 .button, .fas {
     color: rgb(73, 80, 88);
 }
-
+.navbar-burger:hover{
+    background-color: white;
+}
+.navbar-burger{
+    background-color: rgb(43, 46, 48);
+    color: white;
+}
 /*Search button style*/
 
 #searchbar {
