@@ -8,6 +8,7 @@ An innovative app that allows users to keep track of current stocks.
 As someone with an interest in the economic state we find ourselves, I want an app that will allow me to research companies of my interest
 in an effective way. I would like to have access to the companies stock history, current value, and most recent news articles that will affect the company itself.
 ### Images with application functionality:
+
 | Main page    | Stock page | About page|
 |------------|------------|------------|
 | <img src="Assets/mainpage.png" width="300"> | <img src="Assets/project-stock.png" width="300"> |<img src="Assets/aboutpage.png" width="300">|
