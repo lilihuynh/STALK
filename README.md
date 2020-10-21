@@ -8,10 +8,13 @@ An innovative app that allows users to keep track of current stocks.
 As someone with an interest in the economic state we find ourselves, I want an app that will allow me to research companies of my interest
 in an effective way. I would like to have access to the companies stock history, current value, and most recent news articles that will affect the company itself.
 ### Images with application functionality:
-![main page image](/Assets/)
-![stock page image](/Assets/)
-![about page image](/Assets/)
+![main page image](Assets/)
+![stock page image](Assets/)
+![about page image](Assets/)
 
+| Main page    | Stock page | About page|
+|------------|------------|------------|
+| <img src="Assests/mainpage.png" width="300"> | <img src="Assests/project-stock.png" width="300"> |<img src="Assests/aboutpage.png" width="300">|
 
 ### Tech/framework used:
 * Figma (Wireframe)
