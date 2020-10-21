@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "method": "GET",
     "headers": {
       "x-rapidapi-host": "yahoo-finance15.p.rapidapi.com",
-      "x-rapidapi-key": "bc9acd37a3msh43f7fda48e7a6e5p1731cfjsn1e81e356eda8"
+      "x-rapidapi-key": "9140d2d78amsh5d4e59054ecb932p1a991ajsnb5b2a33d25c0"
     }
   }
   $.ajax(settings).done(function (response) {
@@ -57,23 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-
-// for (var i = 0; i < response.news.length; i++) {
-//   var symbolNews = $("<div>");
-//   symbolNews.addClass("savedBtn");
-//   symbolNews.attr("id", "symbolArticle-" + i); //creat id for each article
-//   $("#symbolNews").append(symbolNews);
-
-//   //attach article news accordinglly to the created divs with unique id for each div
-//   $("#symbolArticle-" + i).append("<h4 class='headline'>" + response.news[i].headline + "</h4>");
-//   $("#symbolArticle-" + i).append("<h5 class='news'><b>Summary: </b>" + response.news[i].summary + "</h5>");
-//   $("#symbolArticle-" + i).append("<h5 class='news'><b>Source: </b>" + response.news[i].source + "</h5>");
-//   $("#symbolArticle-" + i).append("<a href=" + response.news[i].url + "><b>Link: </b>" + response.news[i].url + "</a>");
-
-// }
-
-
-
 //users search for stock info
 $(".search-button").on("click", function (event) {
   event.preventDefault();
@@ -93,7 +76,7 @@ $(".search-button").on("click", function (event) {
     //add new symbol input to symbol array
     symbols.push(symbol);
 
-    // //save symbols array
+    //save symbols array
     localStorage.setItem("symbols", JSON.stringify(symbols));
     renderButtons();
   }
@@ -142,7 +125,6 @@ function pastingStock(response) {
   $("#stockInfo").append("<h4>" + response.quote.latestTime + "</h4>");
   $("#stockInfo").append("<h6><b>Price: </b>" + response.quote.latestPrice + "$</h6>");
   $("#stockInfo").append("<h6><b>Change: </b>" + response.quote.change + "$</h6>");
-  $("#stockInfo").append("<h6><b>ercentage change: </b>" + response.quote.changePercent + "</h6>");
   $("#stockInfo").append("<h6><b>Bid: </b>" + response.quote.iexBidPrice + "$</h6>");
   $("#stockInfo").append("<h6><b>Ask: </b>" + response.quote.iexAskPrice + "$</h6>");
   $("#stockInfo").append("<h6><b>Open Price: </b>" + response.quote.open + "$</h6>");
@@ -173,7 +155,7 @@ function makeTheChart(response) {
   var points = [];
   var labels = [];
   var values = [];
-  for (var i = 0; i < 16; i++) {
+  for (var i = 8; i < 23; i++) {
     // response.chart[i].date; //x
     // response.chart[i].close; //y
     var point = {};
@@ -200,7 +182,17 @@ function makeTheChart(response) {
           'rgba(255, 206, 86, 0.2)',
           'rgba(75, 192, 192, 0.2)',
           'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
+          'rgba(255, 159, 64, 0.2)',
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)',
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
         ],
         borderColor: [
           'rgba(255, 99, 132, 1)',
@@ -208,7 +200,17 @@ function makeTheChart(response) {
           'rgba(255, 206, 86, 1)',
           'rgba(75, 192, 192, 1)',
           'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
+          'rgba(255, 159, 64, 1)',
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
         ],
         borderWidth: 1
       }]
@@ -255,65 +257,5 @@ if (retrievedSymbols) {
   pastingStock(response);
   makeTheChart(response);
 };
-
-
-
-// if (retrievedResponse) {
-//   response = retrievedResponse;
-//   pastingStock(response);
-//   makeTheChart(response);
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Ajax call
-// var settings = {
-//     "async": true,
-//     "crossDomain": true,
-//     "url": "https://yahoo-finance15.p.rapidapi.com/api/yahoo/ne/news/AAPL",
-//     "method": "GET",
-//     "headers": {
-//         "x-rapidapi-host": "yahoo-finance15.p.rapidapi.com",
-//         "x-rapidapi-key": "bc9acd37a3msh43f7fda48e7a6e5p1731cfjsn1e81e356eda8"
-//     }
-// }
-
-// $.ajax(settings).done(function (response) {
-//     console.log(response);
-
-//     //$("#newsContainer").text(response.item[0]);
-
-
-// });
-
-
 
 
