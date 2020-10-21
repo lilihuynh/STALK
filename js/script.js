@@ -155,7 +155,7 @@ function makeTheChart(response) {
   var points = [];
   var labels = [];
   var values = [];
-  for (var i = 0; i < 16; i++) {
+  for (var i = 8; i < 23; i++) {
     // response.chart[i].date; //x
     // response.chart[i].close; //y
     var point = {};
