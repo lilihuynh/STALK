@@ -2,7 +2,7 @@
 ### App name: "STALK"
 
 ### Description of project
-An innovative app that allows users to keep track of current stocks.
+An innovative app that allows users to keep track of current stocks and news. Search for individual stock info and news.
 
 ### User Story:
 As someone with an interest in the economic state we find ourselves, I want an app that will allow me to research companies of my interest
@@ -18,8 +18,8 @@ in an effective way. I would like to have access to the companies stock history,
 * Bulma (CSS Framework)
 * Chart.JS (Javascript)
 * APIs Used:
- - Yahoo Finance 
- - Cloud.iexapis.com
+- Yahoo Finance 
+- Cloud.iexapis.com
 
 ### Usage:
 The Home page contains top stock news and a navbar directing the user to either the Stock page or the About Us page.
