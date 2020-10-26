@@ -228,7 +228,7 @@ function makeTheChart(response) {
 }
 
 function ajaxCall(symbol) {
-  var queryURL = "https://cloud.iexapis.com/stable/stock/" + symbol + "/batch?types=quote,news,chart&range=1m&last=5&token=pk_1ab605c251d04b97a65bcf02a58b8f02";
+  var queryURL = "https://cloud.iexapis.com/stable/stock/" + symbol + "/batch?types=quote,news,chart&range=1m&last=5&token=pk_b16e67ef690f41b9a4b7a15433e8ad53";
   $.ajax({
     url: queryURL,
     method: "GET"
